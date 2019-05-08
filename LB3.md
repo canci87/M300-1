@@ -115,3 +115,14 @@ Die Sicherheit habe ich wie folgt gewährleistet:
 
 ## Code
 
+![GUI](Images/code.png)
+
+# K5
+
+## Wissenszuwachs 
+
+Im Verlauf dieser Arbeit konnte ich viel neues dazu lernen, insbesondere Docker konnte ich gut kennenlernen. Ich finde mich nun damit ganz gut zurrecht und kann einfache "Container-Infrastrukturen" erstellen. Auch über Container konnte ich mein Wissen erweitern, da ich diese zuvor noch nie aufgesetzt habe. Das Setup der Infrastruktur über das docker-compose.yml ist recht ähnlich wie bei Vagrant und ich konnte mit den Grundlagen von der LB2 einen guten Grundstein schaffen, trotzdem konnte ich auch hier noch neues lernen. 
+
+## Reflexion
+
+Im grossen und ganzen hatte ich bei dieser Arbeit deutlich mehr Spass als bei der LB2 mit Vagrant. Ich war anfangs nicht so motiviert im Unterricht, konnte mich dann aber wieder motivieren und nach den ersten Erfolgen hat mir das arbeiten mit Docker recht spass gemacht. Im Betrieb arbeiten wir kaum mit Container, weshalb ich es dort wahrscheinlich nicht gross einsetzen werden, was ich schade finde. Nur das dokumentieren mit Markdown finde ich immernoch sehr mühsam.
