@@ -48,7 +48,7 @@ $ git clone https://github.com/mc-b/M300      #Repository klonen
 
 ### Docker
 
-1. Docker Account erstellen auf www.hub.docker.com
+1. Docker Account erstellen auf www.docker.com
 2. Docker Desktop für Windows installieren (neustart benötigt)
 
 # K3
