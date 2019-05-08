@@ -109,6 +109,7 @@ Die Testfälle sind hier übersichtlich dokumentiert:
 Die Sicherheit habe ich wie folgt gewährleistet:
 
 - CPU Leistung begränzen
+- Memory Leistung begränzen
 - Neustarts begränzen
 - Überwachung und Benachrichtigung (Monitoring)
 
@@ -116,6 +117,8 @@ Die Sicherheit habe ich wie folgt gewährleistet:
 ## Code
 
 ![GUI](Images/code.png)
+
+In den Zeilen 33-82 wird das Monitoring installiert. Hierfür sind 2 Container notwendig. Der CAdvisor Container welcher für das GUI zuständig ist, und der influxdb Container, welcher die Datenbank zur verfügung stellt. In den Zeilen 58,59 sowie 81, 82 wird dann jeweils die CPU sowie die Memory Auslastung beschränkt. Dies habe ich auch bei allen anderen Container so eingestellt.
 
 # K5
 
