@@ -93,7 +93,7 @@ Um die Funktion der Docker Container zu testen, habe ich die folgenden Testfäll
 - Funktioniert das Monitoring
 - Werden die Sicherheitsrichtlinien (CPU / Memory Limit) angewendet.
 
-Die Testfälle sind hier übersichtlich dokumentiert.
+Die Testfälle sind hier übersichtlich dokumentiert:
 
 | Test                                   |Erwartetes Resultat                                         |Tatsächliches Resultat|
 | ---------------------------------------|------------------------------------------------------------|:--------------------:|
@@ -111,5 +111,7 @@ Die Sicherheit habe ich wie folgt gewährleistet:
 - CPU Leistung begränzen
 - Neustarts begränzen
 - Überwachung und Benachrichtigung (Monitoring)
-- Syslog einbindung
+
+
+## Code
 
