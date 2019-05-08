@@ -6,7 +6,7 @@
 
 Ich habe bezüglich Docker, Microservics und Container kaum Erfahrung. Ich kenne ein wenig von der Theorie aus dem Modul 300 und ÜK 340 mehr aber auch nicht. Was genau Technisch im Hintergrund abgeht weiss ich nicht. Ich verwende zwar täglich Container wie YouTube oder Gmail und weiss, dass diese immer mehr an Popularität gewinnen, wie diese einzurichten sind weiss ich jedoch nicht. Ich bin gespannt mit Docker etwas mehr über Container zu lernen.
 
-Da ich wie gesagt nur begrenztes Vorwissen habe, habe ich zuerst einmal die Unterlagen auf dem BSCW durchgelesen.Anschliessend habe ich mir noch ein Basic Docker Tutorial auf YouTube angeschaut.
+Da ich wie gesagt nur begrenztes Vorwissen habe, habe ich zuerst einmal die Unterlagen auf dem BSCW durchgelesen. Anschliessend habe ich mir noch ein Basic Docker Tutorial auf YouTube angeschaut.
 
 ## Einrichten
 
