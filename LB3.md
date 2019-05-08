@@ -96,7 +96,7 @@ Um die Funktion der Docker Container zu testen, habe ich die folgenden Testfäll
 Die Testfälle sind hier übersichtlich dokumentiert.
 
 | Test                                   |Erwartetes Resultat                                         |Tatsächliches Resultat|
-| ---------------------------------------|:---------------------------------------------------- -----:|:--------------------:|
+| ---------------------------------------|------------------------------------------------------------|:--------------------:|
 | Webserver erreichbar unter localhost   |Standard Webseite gibt MySQL Verbindungstatus zurück.       |Funktioniert          |
 | MySQL über PhPmyAdmin erreichbar       |PhPmyAdmin login funktioniert auf MySQL                     |Funktioniert          |
 | Monitoring per Cadvisor ist erreichbar |CAdvisor ist erreichbar und kommuniziert mit der DB         |Funktioniert          |
