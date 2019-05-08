@@ -62,12 +62,54 @@ Für die LB3 werde ich wie bei der LB2 einen Webserver aufsetzen welcher die Ver
 | Befehl           |Beschreibung                                                                                   |
 | -----------------|:---------------------------------------------------------------------------------------------:|
 | Docker run       |Startet neuen Container - Der Befehl bietet unzählige Optionen und Parameter für Konfiguration |
-| Docker run -it ubuntu /bin/bash       |Erzeugt und Konfiguriert eine Virtuelle Maschine basierend auf dem Vagrantfile           |
-| Vagrant ssh      |Verbindung zur VM per SSH wird hergestellt                                               | 
-| Vagrant status   |Zeigt den aktuellen Status der VM an                                                     | 
-| Vagrant port     |Zeigt die Weitergeleiteten Ports der VM an                                               | 
-| Vagrant halt     |VM wird gestoppt                                                                         | 
-| Vagrant destroy  |VM wird gestoppt und gelöscht                                                            | 
+| Docker run -it ubuntu /bin/bash       |Startet einen Container mit einer interaktiven Shell                      |
+| Docker run -d ubuntu touch /tmp/lok      |Startet einen Container im Hintergrund und legt eine Datei an          |                     
+| Docker ps        |Gibt einen Überblick über alle aktuellen Container                                             | 
+| Docker ps -a     |Aktive und gestoppte Container anzeigen (All)                                                  | 
+| Docker container ls -q |Gibt die ID aller laufenden Container an.                                                |
+| Docker images    |Gibt Liste von lokalen Images aus (Repository-Name, Tag-Name, und Grösse)                      | 
+| Docker rm        |Löscht einen oder mehrere Container. Gibt ID's aller Erfolgreich gelöschten Container zurück   | 
+| Docker rmi       |Löscht das angegebene Image. Diese werden durcgh ID oder Tag-Name spezifiziert.                |
+| Docker start     |Startet einen oder mehrere Container, welche gestoppt wurden (Nur starten nicht erstellen).    |
+| Docker stop      |Stoppt einen oder mehrere Container(Herunterfahren).                                           |
+| Docker kill      |Der Container wird sofort gestoppt und anschliessend gelöscht.                                 |
+| Docker logs      |Gibt die Logs für einen Container aus.                                                         |
+| Docker inspect   |Gibt umfangreiche Info über Container und Image(Konfigurationen, Netzwerkeinstellungen etc.)   |
+| Dokcer diff      |Gibt Änderungen am Dateisystem an, gegenüber dem Image welches verwendet wurde.                |
+| Docker top       |Gibt die aktuell laufenden Prozesse an(Task Manager).                                          |
+| Docker build -t "name" |Erstellt Image aus dem Dockerfile im Verzeichniss                                        |
+| Docker login     |Mit Docker Credentials in dieser CLI Situng anmelden                                           |
+| Docker stack ls  |Zeigts Stacks oder Apps an.                                                                    |
+| Docker stack rm "appname" |Entfernt eine App.                                                                    |
 
+Es gibt noch viele andere Befehle und Parameter in Docker, ich habe hier aber nur ein paar Beispiele aufgelistet. 
 
+# Funktionstests
+
+Um die Funktion der Docker Container zu testen, habe ich die folgenden Testfälle durchgeführt.
+
+- Kann auf Webserver (Localhost:80) zugegriffen werden
+- Ist die Datenbank über PhPmyAdmin erreichbar
+- Funktioniert das Monitoring
+- Werden die Sicherheitsrichtlinien (CPU / Memory Limit) angewendet.
+
+Die Testfälle sind hier übersichtlich dokumentiert.
+
+| Test                                |Erwartetes Resultat                                         |Tatsächliches Resultat|
+| ------------------------------------|:---------------------------------------------------- -----:|:--------------------:|
+| Webserver erreichbar unter localhost|Standard Webseite gibt MySQL Verbindungstatus zurück.       |Funktioniert          |
+| MySQL über PhPmyAdmin erreichbar    |PhPmyAdmin login funktioniert auf MySQL                     |Funktioniert          |
+| Monitoring per Cadvisor ist erreichbar |CAdvisor ist erreichbar und kommuniziert mit der DB      |Funktioniert          |
+| Monitoring werte überschreiten die gesetzen werte (CPU/Memory) nicht. |Im Monitoring überschreitet kein Containter die gesetzen Werte. |Funktioniert|
+
+# K4 
+
+# Sicherheit
+
+Die Sicherheit habe ich wie folgt gewährleistet:
+
+- CPU Leistung begränzen
+- Neustarts begränzen
+- Überwachung und Benachrichtigung (Monitoring)
+- Syslog einbindung
 
