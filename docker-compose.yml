@@ -66,10 +66,12 @@ services:
       - ./data/influxdb:/data
  
   influxdb:
-    image: tutum/influxdb:0.9
+    image: tutum/influxdb:latest
     restart: on-failure
     environment:
       - PRE_CREATE_DB=cadvisor
+      - ADMIN_USER="root"
+      - InNFLUXDB_INIT_PWD="Test123"
     ports:
       - "8083:8083"
       - "8086:8086"
